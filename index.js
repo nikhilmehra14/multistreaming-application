@@ -26,7 +26,7 @@ const twitchOptions = [
   '-b:a', '128k',
   '-ar', 128000 / 4,
   '-f', 'flv',
-  'rtmp://live.twitch.tv/app/live_1053315066_X29oBqGTCA8fYk0n2MYisAxwkWI8hv'
+  'rtmp://live.twitch.tv/app/'
 ];
 
 const twitchFFmpegProcess = spawn('ffmpeg', twitchOptions);
@@ -61,7 +61,7 @@ const youtubeOptions = [
   '-b:a', '128k',
   '-ar', 128000 / 4,
   '-f', 'flv',
-  'rtmp://a.rtmp.youtube.com/live2/wrhq-wkbu-481v-b7j8-9zer'
+  'rtmp://a.rtmp.youtube.com/live2/'
 ];
 
 const youtubeFFmpegProcess = spawn('ffmpeg', youtubeOptions);
