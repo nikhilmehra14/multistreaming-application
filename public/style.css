@@ -1,0 +1,34 @@
+/* body{
+  background-color: #313131;
+} */
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 2rem;
+  min-width: 100%;
+  min-height: 100%;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  padding: 0.5%;
+}
+
+.btns{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+button{
+  margin: 1%;
+  padding: 0.5%;
+}
+video{
+  width:800px;
+  height:480px;
+}
+.para{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

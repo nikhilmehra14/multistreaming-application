@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+<nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Multi-Streaming Web Application</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section>
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title">Streaming Console Window</h1>
+      <video id="user-video" autoplay muted loop src="./assets/TV No Signal Effect - Please Stand By.mp4" loop></video>
+      
+        <div class="btns">
+            <button id="connect" class="btn btn-primary">Connect to Server</button><br>
+
+            <button id="start" class="btn btn-success">Start Streaming</button><br>
+            
+            <button id="stop"class="btn btn-danger">Stop Streaming</button></p>
+       </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <p class="para">&copy; Copyright 2024</p>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+</body>
+</html>
